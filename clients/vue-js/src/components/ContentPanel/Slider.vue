@@ -463,7 +463,7 @@
 
       // in case that one layer is selected twice
       resetAttribute () {
-        this.cumulatively = false;
+        this.cumulatively = false
         this.animateStop = true
         if (this.timeData && this.timeData.selectAllLayers) {
           this.attribute = null

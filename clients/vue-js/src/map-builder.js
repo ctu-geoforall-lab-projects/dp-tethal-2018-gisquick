@@ -14,6 +14,8 @@ import md5 from 'md5'
 
 
 function createUrl (baseUrl, params = {}) {
+  console.log('baseUrl', baseUrl)
+  // const host = 'http://localhost:8000'
   const url = new URL(baseUrl)
   Object.keys(params).forEach(k => url.searchParams.append(k, params[k]))
   return url
